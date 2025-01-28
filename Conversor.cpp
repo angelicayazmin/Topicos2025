@@ -17,6 +17,13 @@ void convertirCelsiusAFahrenheit() {
     double fahrenheit = (celsius * 9.0 / 5.0) + 32;
     cout << celsius << " grados Celsius son " << fahrenheit << " grados Fahrenheit." << endl;
 }
+void convertirKilogramosALibras() {
+    double kg;
+    cout << "Ingresa el peso en kilogramos: ";
+    cin >> kg;
+    double libras = kg * 2.20462;
+    cout << kg << " kilogramos son " << libras << " libras." << endl;
+}
 
 
 int main() {
@@ -39,6 +46,9 @@ int main() {
             case 2:
                 convertirCelsiusAFahrenheit();
                 break;
+            case 3:
+                convertirKilogramosALibras();
+                break;
             case 5:
                 cout << "Saliendo del programa. ¡Hasta luego!" << endl;
                 break;
@@ -46,6 +56,6 @@ int main() {
                 cout << "Opción no válida. Por favor, intenta de nuevo." << endl;
 
         }
-    }
+    } while (opcion != 5);
 }
   
