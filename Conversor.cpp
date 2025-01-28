@@ -3,7 +3,6 @@ using namespace std;
 
 void convertirKilometrosAMillas() {
     double km;
-<<<<<<< HEAD
     cout << "Ingresa la distancia en kilómetros: ";
     cin >> km;
     double millas = km * 0.621371;
